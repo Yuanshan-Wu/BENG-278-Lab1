@@ -10,7 +10,7 @@ for j=1:numel(subfld)
     dcm_files=dir2(subfld_name)
     
     for k=1:numel(dcm_files)
-        imgs(:,:,j,k)=dicomread([subfld_name '/' dcm_files(k).name]);
+        imgs(:,:,j,k)=dicomread([subfld_name]);
     end
     
 end

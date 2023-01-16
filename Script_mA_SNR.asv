@@ -19,10 +19,8 @@ fld_name=[data_path 'Hole_NoFatRing_50mA_' num2str(speed) 'ms_100kV_' num2str(sn
 %% Lets compare the object to the known design 
 sliceNo = 38; %Pick the slice number of the Hole phantom
 
-imgA(find(imgA == -2000)) = 0;
 imgA=imgs(:,:,sliceNo);
-figure; imshow(imgA,[0,max(max(imgA))]);
-
+figure; imshow(imgA,[0 255]);
 % The units on the spec sheet are in millimeters
 % Note, the image if left-right flipped relative to the spec sheet
 
