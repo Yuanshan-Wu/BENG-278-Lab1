@@ -1,0 +1,14 @@
+function [imgs]=load_images(fld_name);
+%load_images loads in images of the same scan type (multiple realizations)
+%   This enables averaging of estimates
+
+% Determine number of subfolders
+subfld = dir2(fld_name);
+
+for j=1:numel(subfld);
+    subfld_name = [fld_name '/' subfld.
+a=2;
+
+
+end
+
